@@ -15,11 +15,11 @@ void runCommand(String shellCommand){
 }
 
 void updateTool(){
-  String projectUrl = 'https://github.com/iamtheblackunicorn/bus.git'
+  String projectUrl = 'https://github.com/iamtheblackunicorn/bus.git';
   String command = 'git clone $projectUrl';
   String changeDir = 'cd bus';
   String buildExecutable = 'make';
-  String moveExecutable = 'mv -f dist/bus $(which bus)';
+  String moveExecutable = 'mv -f dist/bus \$(which bus)';
   runCommand(command);
   runCommand(changeDir);
   runCommand(buildExecutable);
@@ -96,12 +96,12 @@ void main(List<String> arguments){
   }
   else if (arguments[0] == 'upgrade'){
     printColoredString('$unicornHead $blackHeart Updating tool...', 'magenta');
-    build();
+    updateTool();
   }
   else if (arguments[0] == 'update'){
     String branch = arguments[1];
     printColoredString('$unicornHead $blackHeart Fetching last changes from "$branch"...', 'magenta');
-    build();
+    fetchLatestSource(branch);
   }
   else {
     printColoredString('$angryFace Invalid options supplied!', 'red');
