@@ -66,7 +66,7 @@ Save that and quit the System settings. After having done that, go to the File E
 
 ## Usage
 
-*Bus* accepts four flags:
+*Bus* accepts six flags:
 
 - 1.) Fetching a *Black Unicorn* project:
 ```bash
