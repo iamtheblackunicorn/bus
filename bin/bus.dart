@@ -10,10 +10,12 @@ void updateTool(){
   String projectUrl = 'https://github.com/iamtheblackunicorn/bus.git';
   String command = 'git clone $projectUrl';
   String changeDir = 'cd bus';
+  String pubGet = 'dart pub get';
   String buildExecutable = 'make';
   String moveExecutable = 'mv -f dist/bus \$(which bus)';
   runCommand(command);
   runCommand(changeDir);
+  runCommand(pubGet);
   runCommand(buildExecutable);
   runCommand(moveExecutable);
 }
