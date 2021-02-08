@@ -1,19 +1,11 @@
-import 'dart:io';
-import 'package:termstyle/colors.dart';
-import 'package:termstyle/emojis.dart';
+// BLACK UNICORN SOURCE MANAGER by Alexander Abraham a.k.a. "The Black Unicorn"
+// licensed under the MIT license
 
-void runCommand(String shellCommand){
-  List<String> shellItems = shellCommand.split(' ');
-  String initItem = shellItems[0];
-  shellItems.removeAt(0);
-  Process.run(
-    initItem, shellItems).then((result) {
-      stdout.write(result.stdout);
-      stderr.write(result.stderr);
-    }
-  );
-}
+import 'package:clibu/files.dart'; // "runCommand()" comes from here.
+import 'package:termstyle/colors.dart'; // All ANSI colors come from here.
+import 'package:termstyle/emojis.dart'; // All emojis come from here.
 
+/// Updates the BUS tool.
 void updateTool(){
   String projectUrl = 'https://github.com/iamtheblackunicorn/bus.git';
   String command = 'git clone $projectUrl';
@@ -26,15 +18,18 @@ void updateTool(){
   runCommand(moveExecutable);
 }
 
+/// Fetches the lastest source code of a current project.
 void fetchLatestSource(String branch){
   String baseCommand = 'git pull origin $branch';
   runCommand(baseCommand);
 }
 
+/// Returns the root URL of my GitHub.
 String rootUrl(){
   return 'https://github.com/iamtheblackunicorn';
 }
 
+/// Clones down the source code of the specified project.
 void clone(String project) {
   String gitRootUrl = rootUrl();
   String command = 'git clone $gitRootUrl/$project';
@@ -45,6 +40,7 @@ void clone(String project) {
   }
 }
 
+/// Switches to the specified branch of a current repo.
 void switchBranch(String branch) {
   String gitBranch = 'git checkout -b ';
   String command = '$gitBranch$branch';
@@ -55,15 +51,17 @@ void switchBranch(String branch) {
   }
 }
 
+/// Runs the rule 'make' in a current project.
 void build(){
   try {
-    String command = 'make build';
+    String command = 'make';
     runCommand(command);
   } catch(e) {
     printColoredString('Build failed!', 'red');
   }
 }
 
+/// Returns the tool's version.
 void version(){
   String progName = 'Black Unicorn Source Manager';
   String version = '1.0';
@@ -72,6 +70,7 @@ void version(){
   printColoredString(message, 'magenta');
 }
 
+/// Entry point for the Dart VM.
 void main(List<String> arguments){
   String unicornHead = getEmoji('unicornHead');
   String blackHeart = getEmoji('blackHeart');

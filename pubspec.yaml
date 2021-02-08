@@ -6,4 +6,5 @@ environment:
   sdk: '>=2.8.1 <3.0.0'
 dependencies:
   path: ^1.7.0
-  termstyle: ^1.0.0
+  termstyle: ^1.1.0
+  clibu: ^1.1.0
