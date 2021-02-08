@@ -1,1 +1,1 @@
-build: ; mkdir dist && dart2native bin/bus.dart ./bus && mv bus dist
+build: ; mkdir dist && dart2native bin/bus.dart -o ./bus && mv bus dist
