@@ -1,0 +1,9 @@
+language:
+  - "Dart"
+script:
+  - "make"
+  - "cd dist"
+  - "chmod a+x bus"
+  - "./bus get Sequo"
+  - "./bus switch main"
+  - "./bus --version"
