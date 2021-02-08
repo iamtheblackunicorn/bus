@@ -1,6 +1,12 @@
 # BLACK UNICORN SOURCE MANAGER
 
+[![Build Status](https://travis-ci.com/iamtheblackunicorn/bus.svg?branch=master)](https://travis-ci.com/iamtheblackunicorn/bus)
+
+*The Black Unicorn Source Manager for Black Unicorn projects :unicorn:*
+
 ## About
+
+I wanted a uniform way, to fetch the source of my projects, fetch the latest source code, build my projects and build something more in Dart. :black_heart: *Bus* is the tool for that.
 
 ## Building
 
@@ -81,3 +87,18 @@ $ bus build
 ```bash
 $ bus --version
 ```
+
+- 5.) Updating the source of a *Black Unicorn* project:
+```bash
+$ bus update
+```
+
+- 6.) Updating *Bus*:
+```bash
+$ bus upgrade
+```
+
+## Note
+
+- *Bus* by Alexander Abraham a.k.a *The Black Unicorn*
+- licensed under the MIT license

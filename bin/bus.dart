@@ -14,6 +14,23 @@ void runCommand(String shellCommand){
   );
 }
 
+void updateTool(){
+  String projectUrl = 'https://github.com/iamtheblackunicorn/bus.git'
+  String command = 'git clone $projectUrl';
+  String changeDir = 'cd bus';
+  String buildExecutable = 'make';
+  String moveExecutable = 'mv -f dist/bus $(which bus)';
+  runCommand(command);
+  runCommand(changeDir);
+  runCommand(buildExecutable);
+  runCommand(moveExecutable);
+}
+
+void fetchLatestSource(String branch){
+  String baseCommand = 'git pull origin $branch';
+  runCommand(baseCommand);
+}
+
 String rootUrl(){
   return 'https://github.com/iamtheblackunicorn';
 }
@@ -77,7 +94,16 @@ void main(List<String> arguments){
     printColoredString('$redHeart Initiating build...', 'magenta');
     build();
   }
+  else if (arguments[0] == 'upgrade'){
+    printColoredString('$unicornHead $blackHeart Updating tool...', 'magenta');
+    build();
+  }
+  else if (arguments[0] == 'update'){
+    String branch = arguments[1];
+    printColoredString('$unicornHead $blackHeart Fetching last changes from "$branch"...', 'magenta');
+    build();
+  }
   else {
-    printColoredString('$angryFace Invalid options supllied!', 'red');
+    printColoredString('$angryFace Invalid options supplied!', 'red');
   }
 }
