@@ -1,6 +1,7 @@
 language:
-  - "Dart"
+  - "dart"
 script:
+  - "dart pub get"
   - "make"
   - "cd dist"
   - "chmod a+x bus"
