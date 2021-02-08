@@ -8,4 +8,4 @@ script:
   - "./bus get Sequo"
   - "./bus switch main"
   - "./bus --version"
-  - "./bus update"
+  - "./bus update main"
