@@ -1,6 +1,6 @@
 # BLACK UNICORN SOURCE MANAGER
 
-[![Build Status](https://travis-ci.com/iamtheblackunicorn/bus.svg?branch=master)](https://travis-ci.com/iamtheblackunicorn/bus)
+[![Build Status](https://travis-ci.com/iamtheblackunicorn/bus.svg?branch=main)](https://travis-ci.com/iamtheblackunicorn/bus)
 
 *The Black Unicorn Source Manager for Black Unicorn projects :unicorn:*
 
