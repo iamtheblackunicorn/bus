@@ -46,10 +46,10 @@ This should produce an executable by the name of `bus` in a directory called `di
 
 #### Linux & Mac OSX
 
-Add this line to your `.zshrc` or `.bashrc` or `.bash_profile` in `$HOME`:
+Add this line to your `.zshrc`, `.bashrc` or `.bash_profile` in `$HOME`:
 
 ```bash
-export PATH=$HOME/blackunicorn/bin:$PATH
+export PATH="$HOME/blackunicorn/bin:$PATH"
 ```
 After having done that, create a directory called `blackunicorn` in `$HOME` and in `blackunicorn` a directory called `bin`.
 
