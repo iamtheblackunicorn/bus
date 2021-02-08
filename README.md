@@ -100,5 +100,5 @@ $ bus upgrade
 
 ## Note
 
-- *Bus* by Alexander Abraham a.k.a *The Black Unicorn*
+- *Bus* by Alexander Abraham :black_heart: a.k.a *The Black Unicorn* :unicorn:
 - licensed under the MIT license
