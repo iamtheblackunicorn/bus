@@ -83,7 +83,7 @@ $ bus switch main
 $ bus build
 ```
 
-- 4.) Building a *Black Unicorn* project:
+- 4.) Getting the current version of the *Black Unicorn Source Manager*:
 ```bash
 $ bus --version
 ```
