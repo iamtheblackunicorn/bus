@@ -1,4 +1,4 @@
-# BLACK UNICORN SOURCE MANAGER :unicorn:
+# THE BLACK UNICORN SOURCE MANAGER :unicorn:
 
 [![Build Status](https://travis-ci.com/iamtheblackunicorn/bus.svg?branch=main)](https://travis-ci.com/iamtheblackunicorn/bus)
 
