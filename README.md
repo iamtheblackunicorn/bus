@@ -12,7 +12,7 @@ I wanted a uniform way to fetch the sources of my projects and build my projects
 
 ### Prerequisites
 
-You should have the following programs installed:
+You should have the following programmes installed:
 
 - Dart SDK
 - Git
@@ -25,7 +25,7 @@ You should have the following programs installed:
 $ git clone https://github.com/iamtheblackunicorn/bus.git
 ```
 
-- 2.) Changing into the root source directory:
+- 2.) Changing into the source directory's root:
 ```bash
 $ cd bus
 ```
@@ -70,7 +70,7 @@ Save that and quit the System settings. After having done that, go to the File E
 
 - 1.) Fetching a *Black Unicorn* project:
 ```bash
-$ bus get Sequo
+$ bus get termstyle
 ```
 
 - 2.) Switching branches inside a *Black Unicorn* project:
@@ -98,7 +98,7 @@ $ bus update
 $ bus upgrade
 ```
 
-## Note
+## Note :scroll:
 
-- *Bus* by Alexander Abraham :black_heart: a.k.a *The Black Unicorn* :unicorn:
-- licensed under the MIT license
+- *Black Unicorn Source Manager :unicorn:* by Alexander Abraham :black_heart: a.k.a. *"The Black Unicorn" :unicorn:*
+- Licensed under the MIT license.
