@@ -1,6 +1,6 @@
 # THE BLACK UNICORN SOURCE MANAGER :unicorn:
 
-[![Build Status](https://travis-ci.com/iamtheblackunicorn/bus.svg?branch=main)](https://travis-ci.com/iamtheblackunicorn/bus)
+[![GitHub CI](https://github.com/iamtheblackunicorn/bus/actions/workflows/dart.yml/badge.svg)](https://github.com/iamtheblackunicorn/bus/actions)
 
 *The Black Unicorn Source Manager for Black Unicorn projects. :unicorn:*
 
