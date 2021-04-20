@@ -1,9 +1,9 @@
 // BLACK UNICORN SOURCE MANAGER by Alexander Abraham a.k.a. "The Black Unicorn"
 // licensed under the MIT license
 
-import 'package:clibu/files.dart'; // "runCommand()" comes from here.
-import 'package:termstyle/colors.dart'; // All ANSI colors come from here.
-import 'package:termstyle/emojis.dart'; // All emojis come from here.
+import 'package:clibu/clibu.dart'; // "runCommand()" comes from here.
+import 'package:termstyle/termstyle.dart'; // All ANSI colors come from here.
+import 'package:termstyle/termstyle.dart'; // All emojis come from here.
 
 /// Updates the BUS tool.
 void updateTool(){
